@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ccc;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+main {
+    flex: 1;
+}
+
+header .menu {
+    background-color: #acacac;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 24px;
+}
+
+header .menu-usuario {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.menu-usuario p {
+    margin-right: 16px;
+}
+
+header .foto-usuario {
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 48px;
+}
+
+main .menu {
+    background-color: #6d6d6d;
+    width: 15%;
+    position: sticky; /* Adicione isso para tornar o menu lateral fixo */
+    top: 0; /* Mantenha o menu lateral no topo */
+}
+
+.menu nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.menu nav a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #acacac;
+    padding: 16px;
+    flex-grow: 1;
+}
+
+.menu nav a:hover {
+    background-color: #6d6d6d;
+    color: #009432;
+}
+
+footer {
+    background-color: #acacac;
+    position: relative;
+    padding-top: auto;
+    padding-bottom: auto;
+    color: #fff;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+footer img {
+    height: 80px;
+    margin: 6px 0;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
